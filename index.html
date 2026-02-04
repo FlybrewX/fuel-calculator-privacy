@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pilot Fuel Calculator — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for Pilot Fuel Calculator" />
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a2e;
+      --text:#eaf0ff;
+      --muted:#b6c2e2;
+      --line:rgba(255,255,255,.12);
+      --accent:#4da3ff;
+      --good:#38d39f;
+      --warn:#ffcc66;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--sans);
+      background:
+        radial-gradient(900px 500px at 20% 0%, rgba(77,163,255,.18), transparent 60%),
+        radial-gradient(900px 500px at 90% 10%, rgba(56,211,159,.14), transparent 55%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:980px; margin:0 auto; padding:28px 18px 60px}
+    .topbar{
+      display:flex; gap:12px; align-items:center; justify-content:space-between;
+      margin-bottom:18px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+    }
+    .logo{
+      width:44px; height:44px; border-radius:14px;
+      background:linear-gradient(135deg, rgba(77,163,255,.9), rgba(56,211,159,.85));
+      box-shadow:var(--shadow);
+      display:grid; place-items:center;
+      flex:0 0 auto;
+    }
+    .logo svg{opacity:.95}
+    .title h1{margin:0; font-size:20px; letter-spacing:.2px}
+    .title p{margin:2px 0 0; color:var(--muted); font-size:13px}
+    .pillrow{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
+    .pill{
+      font-size:12px; color:var(--muted);
+      border:1px solid var(--line);
+      padding:7px 10px; border-radius:999px;
+      background:rgba(255,255,255,.04);
+      backdrop-filter: blur(6px);
+    }
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .hero{
+      padding:22px 22px 14px;
+      border-bottom:1px solid var(--line);
+    }
+    .hero h2{margin:0 0 8px; font-size:18px}
+    .hero p{margin:0; color:var(--muted)}
+    .grid{
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap:14px;
+      padding:16px;
+    }
+    @media (max-width: 860px){
+      .grid{grid-template-columns:1fr}
+      .pillrow{justify-content:flex-start}
+      .topbar{flex-direction:column; align-items:flex-start}
+    }
+    .section{
+      padding:18px 18px 8px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:rgba(15,26,46,.55);
+    }
+    .section h3{
+      margin:0 0 8px;
+      font-size:15px;
+      letter-spacing:.2px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+    .dot{
+      width:9px; height:9px; border-radius:50%;
+      background:var(--accent);
+      box-shadow:0 0 0 4px rgba(77,163,255,.15);
+    }
+    .section p, .section li{color:var(--muted); font-size:13.5px}
+    ul{margin:8px 0 0 18px; padding:0}
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      color:var(--muted);
+      font-size:12.5px;
+      margin-top:10px;
+    }
+    .badge strong{color:var(--text); font-weight:600}
+    .badge .icon{
+      width:26px; height:26px; border-radius:10px;
+      display:grid; place-items:center;
+      background:rgba(56,211,159,.14);
+      border:1px solid rgba(56,211,159,.35);
+      color:var(--good);
+      flex:0 0 auto;
+    }
+    .kbd{
+      font-family:var(--mono);
+      font-size:12px;
+      padding:2px 7px;
+      border-radius:8px;
+      border:1px solid var(--line);
+      background:rgba(0,0,0,.25);
+      color:var(--text);
+    }
+    .footer{
+      padding:18px 22px;
+      border-top:1px solid var(--line);
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12.5px;
+    }
+    .small{font-size:12px; color:var(--muted)}
+    .linkbtn{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      color:var(--text);
+      text-decoration:none;
+    }
+    .linkbtn:hover{background:rgba(255,255,255,.07); text-decoration:none}
+    .warn{
+      border-color: rgba(255,204,102,.35);
+      background: rgba(255,204,102,.08);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M7 15h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <path d="M9 11h6" stroke="white" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+            <path d="M12 3l7 4v10l-7 4-7-4V7l7-4Z" stroke="white" stroke-width="2" opacity=".9"/>
+          </svg>
+        </div>
+        <div class="title">
+          <h1>Pilot Fuel Calculator</h1>
+          <p>Privacy Policy</p>
+        </div>
+      </div>
+
+      <div class="pillrow">
+        <div class="pill">Offline Calculator</div>
+        <div class="pill">No Login</div>
+        <div class="pill">No Tracking</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="hero">
+        <h2>Your privacy matters.</h2>
+        <p>
+          This Privacy Policy explains how <strong>Pilot Fuel Calculator</strong> (“the App”) handles your information.
+          The App is designed to work <strong>offline</strong> and does not require you to create an account.
+        </p>
+        <div class="badge">
+          <span class="icon">✓</span>
+          <span><strong>Simple promise:</strong> We do not collect, sell, or share your personal data.</span>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="section">
+          <h3><span class="dot"></span> Information We Collect</h3>
+          <p><strong>We do not collect any personal information.</strong></p>
+          <ul>
+            <li>No account registration.</li>
+            <li>No analytics tracking.</li>
+            <li>No advertising identifiers.</li>
+            <li>No location access.</li>
+            <li>No contact or photo access.</li>
+          </ul>
+
+          <div class="badge warn">
+            <span class="icon" style="background:rgba(255,204,102,.12); border-color:rgba(255,204,102,.35); color:var(--warn);">!</span>
+            <span>
+              The calculations you enter (fuel values, weights, notes) stay on your device.
+            </span>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span> How the App Works</h3>
+          <p>
+            The App performs fuel planning calculations locally on your device.
+            Any data you type is processed only to show results and is not transmitted to us.
+          </p>
+
+          <h3 style="margin-top:14px;"><span class="dot"></span> Third-Party Services</h3>
+          <p>
+            The App does not integrate third-party analytics, advertising networks, or tracking SDKs.
+          </p>
+
+          <h3 style="margin-top:14px;"><span class="dot"></span> Children’s Privacy</h3>
+          <p>
+            The App is not directed to children under 13 and does not knowingly collect data from children.
+          </p>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span> Data Storage</h3>
+          <p>
+            If the App offers saving presets/history, that information is stored locally on your device.
+            You can remove it by deleting the App or using any in-app reset option (if available).
+          </p>
+
+          <h3 style="margin-top:14px;"><span class="dot"></span> Security</h3>
+          <p>
+            Since we do not collect your personal data, there is no server-side storage of your information.
+          </p>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span> Contact & Support</h3>
+          <p>
+            If you have questions or need help, contact us:
+          </p>
+          <p>
+            Email: <a href="mailto:flybrewx@gmail.com">flybrewx@gmail.com</a><br/>
+            (You can change this email to your official support email.)
+          </p>
+
+          <a class="linkbtn" href="#" onclick="navigator.clipboard.writeText(window.location.href); return false;">
+            Copy this page link
+          </a>
+
+          <p class="small" style="margin-top:12px;">
+            Tip: In App Store Connect, paste this page URL into <span class="kbd">Privacy Policy URL</span> and <span class="kbd">Support URL</span>.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>Last updated: <strong>2026-02-04</strong></div>
+        <div>© <span id="year"></span> Fly Brew / Pilot Fuel Calculator</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
